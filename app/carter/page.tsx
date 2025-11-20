@@ -12,6 +12,17 @@ export default function page() {
         'Comunidade Ativa e Popularidade.'
     ]
   return (
-    <div>page</div>
+    <div>
+            <h2>Características do React e Next.js</h2>
+
+            <ul>
+                {caracteristicas.map((caracteristica, i) => {
+                    return <li key={i}>{caracteristica}</li>
+                })}
+            </ul>
+            
+          
+    </div>
+   
   )
 }
