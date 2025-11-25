@@ -2,10 +2,9 @@ import React from 'react';
 import Image from 'next/image';
 
 // Importa o JSON diretamente.
-// O TypeScript e o Next.js/Webpack gerenciam a conversão para objeto JS.
 import tecnologias from '@/app/data/tecnologias.json';
 
-// Define a interface para tipagem (melhora a organização e evita erros)
+// Define a interface para tipagem
 interface Tecnologia {
     title: string;
     image: string;
@@ -13,6 +12,7 @@ interface Tecnologia {
     rating: number;
 }
 
+// Nome da função de componente de página ADEQUADO
 export default function TecnologiasPage() {
 
     return (
@@ -37,7 +37,7 @@ export default function TecnologiasPage() {
                             <Image
                                 src={`/tecnologias/${tecnologia.image}`} 
                                 alt={`Logotipo de ${tecnologia.title}`}
-                                width={80} // Tamanho da imagem
+                                width={80} 
                                 height={80}
                                 className="object-contain mb-3"
                             />
@@ -65,8 +65,8 @@ export default function TecnologiasPage() {
                                             key={i}
                                             className={`w-4 h-4 ml-0.5 ${
                                                 i < tecnologia.rating
-                                                    ? 'text-yellow-400' // Estrela preenchida
-                                                    : 'text-gray-300' // Estrela vazia
+                                                    ? 'text-yellow-400' 
+                                                    : 'text-gray-300' 
                                             }`}
                                             fill="currentColor"
                                             viewBox="0 0 20 20"
