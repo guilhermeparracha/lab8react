@@ -16,7 +16,7 @@ const DescricaoProjetos: React.FC = () => {
         front-end e back-end em vários projetos práticos. Estes exercícios permitiram-me consolidar
         as minhas habilidades em tecnologias essenciais como React, Next.js, Tailwind CSS e integração de APIs.
         Para uma visão completa e atualizada de todos os meus trabalhos, incluindo os mais recentes,
-        visite a minha homepage no GitHub Pages:
+        visite a minha homepage com os labs que trabalhei:
         <br />
         <a 
           href={GITHUB_PAGES_HOMEPAGE} 

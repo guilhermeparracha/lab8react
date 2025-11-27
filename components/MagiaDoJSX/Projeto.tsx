@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Define a interface para as propriedades (props) do componente Projeto
 interface ProjetoProps {
   nome: string;
   url: string;
