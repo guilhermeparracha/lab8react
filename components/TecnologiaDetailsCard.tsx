@@ -1,5 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
+// 1. Importar o Contador
+import ContadorPersonalizado from './ContadorPersonalizado';
 
 // Define a interface para a estrutura completa de uma Tecnologia
 interface Tecnologia {
@@ -59,11 +61,17 @@ const TecnologiaDetailsCard: React.FC<TecnologiaDetailsCardProps> = ({ tecnologi
             </p>
 
             {/* Rating */}
-            <div className="flex justify-between items-center bg-gray-50 p-4 rounded-lg">
+            <div className="flex justify-between items-center bg-gray-50 p-4 rounded-lg mb-6">
                 <span className="text-lg font-semibold text-gray-700">
                     Rating Pessoal:
                 </span>
                 {renderRating(tecnologia.rating)}
+            </div>
+
+            {/* 2. Inserir o Contador Personalizado (Zona de Interação) */}
+            <div className="flex flex-col items-center justify-center pt-4 border-t border-gray-100">
+                <p className="text-sm text-gray-500 mb-3">Dê um like nesta tecnologia:</p>
+                <ContadorPersonalizado title={tecnologia.title} />
             </div>
         </div>
     );
