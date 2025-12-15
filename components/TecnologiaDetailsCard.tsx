@@ -1,9 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-// 1. Importar o Contador
 import ContadorPersonalizado from './ContadorPersonalizado';
 
-// Define a interface para a estrutura completa de uma Tecnologia
 interface Tecnologia {
     title: string;
     image: string;
@@ -15,9 +13,7 @@ interface TecnologiaDetailsCardProps {
     tecnologia: Tecnologia;
 }
 
-// Componente de Card Detalhado
 const TecnologiaDetailsCard: React.FC<TecnologiaDetailsCardProps> = ({ tecnologia }) => {
-    // Função para renderizar as estrelas do rating
     const renderRating = (currentRating: number) => {
         return (
             <div className="flex items-center space-x-0.5">
@@ -39,7 +35,6 @@ const TecnologiaDetailsCard: React.FC<TecnologiaDetailsCardProps> = ({ tecnologi
 
     return (
         <div className="max-w-xl mx-auto p-8 bg-white shadow-2xl rounded-xl">
-            {/* Imagem */}
             <div className="flex justify-center mb-6">
                 <Image
                     src={`/tecnologias/${tecnologia.image}`}
@@ -50,17 +45,14 @@ const TecnologiaDetailsCard: React.FC<TecnologiaDetailsCardProps> = ({ tecnologi
                 />
             </div>
 
-            {/* Título */}
             <h1 className="text-4xl font-extrabold text-gray-900 text-center mb-4 border-b pb-2">
                 {tecnologia.title}
             </h1>
 
-            {/* Descrição */}
             <p className="text-lg text-gray-700 leading-relaxed mb-6 border-b pb-4">
                 {tecnologia.description}
             </p>
 
-            {/* Rating */}
             <div className="flex justify-between items-center bg-gray-50 p-4 rounded-lg mb-6">
                 <span className="text-lg font-semibold text-gray-700">
                     Rating Pessoal:
@@ -68,7 +60,6 @@ const TecnologiaDetailsCard: React.FC<TecnologiaDetailsCardProps> = ({ tecnologi
                 {renderRating(tecnologia.rating)}
             </div>
 
-            {/* 2. Inserir o Contador Personalizado (Zona de Interação) */}
             <div className="flex flex-col items-center justify-center pt-4 border-t border-gray-100">
                 <p className="text-sm text-gray-500 mb-3">Dê um like nesta tecnologia:</p>
                 <ContadorPersonalizado title={tecnologia.title} />

@@ -10,7 +10,6 @@ export default function ProjetosPage() {
       
       <DescricaoProjetos />
       
-      {/* Pode adicionar mais conteúdo aqui, se necessário */}
     </div>
   );
 }

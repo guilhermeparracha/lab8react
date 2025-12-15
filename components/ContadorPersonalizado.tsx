@@ -25,11 +25,9 @@ export default function ContadorPersonalizado({ title }: ContadorPersonalizadoPr
         }
     }, [likes, title, mounted]);
 
-    // Função para lidar com o clique
     const handleLike = (e: React.MouseEvent) => {
-        // ISTO É O QUE IMPEDE A PÁGINA DE "IR ABAIXO"
-        e.preventDefault();  // Impede o comportamento padrão
-        e.stopPropagation(); // Impede que o clique suba para o Link pai
+        e.preventDefault(); 
+        e.stopPropagation(); 
         
         setLikes(likes + 1);
     };
@@ -38,10 +36,9 @@ export default function ContadorPersonalizado({ title }: ContadorPersonalizadoPr
 
     return (
         <button
-            onClick={handleLike} // Usamos a nossa função protegida aqui
+            onClick={handleLike} 
             className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition shadow-md flex gap-2 items-center text-sm font-medium z-10 relative"
         >
-            {/* Texto alterado de "Gosto disto!" para "Like" */}
             <span>Like</span>
             
             <span className="bg-white text-blue-600 px-2 py-0.5 rounded-full text-xs font-bold">

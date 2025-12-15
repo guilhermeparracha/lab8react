@@ -1,7 +1,6 @@
 import React from 'react';
 import Projeto from './Projeto';
 
-// Placeholder: Substitua por sua homepage real do GitHub Pages
 const GITHUB_PAGES_HOMEPAGE = "https://guilhermeparracha.github.io/"; 
 
 const DescricaoProjetos: React.FC = () => {
