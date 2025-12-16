@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Product } from '@/models/interfaces';
+import Favoritos from './Favoritos';
 
 interface ProdutoCardProps {
     produto: Product;
@@ -64,6 +65,9 @@ export default function ProdutoCard({ produto, onAddToCart, onRemoveFromCart }: 
                         </button>
                     </Link>
                 </div>
+                <div className="mt-1">
+                        <Favoritos title= 'favorito'/>
+                            </div>
             </div>
         </div>
     );

@@ -40,6 +40,7 @@ export default function RootLayout({
             <Link href="/contador">Contador</Link>
             <Link href="/input">Input</Link>
             <Link href="/produtos">Produtos</Link>
+            <Link href="/pais">Países</Link>
           </nav>
         </header>
         
