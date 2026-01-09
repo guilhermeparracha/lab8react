@@ -47,20 +47,18 @@ export default async function PaisList() {
     );
 }
 function PaisCard({ name, area, population }: PaisCardProps) {
-    const formatNumber = (num: number): string => {
-        return new Intl.NumberFormat('pt-PT', { maximumFractionDigits: 0 }).format(num);
-    };
+    
 
     return (
         <div className="bg-white border border-gray-200 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col">
             <h2 className="text-2xl font-bold text-gray-900 mb-3">{name}</h2>
             
             <div className="mt-auto pt-3 border-t">
-                <p className="text-sm">
-                    <span className="font-semibold">População:</span> {formatNumber(population)}
+                <p className="text-sm text-black ">
+                    <span className="font-semibold text-black">População:</span> {population}
                 </p>
-                <p className="text-sm text-gray-700">
-                    <span className="font-semibold">Área:</span> {formatNumber(area)} 
+                <p className="text-sm text-black">
+                    <span className="font-semibold text-black">Área:</span> {area} 
                 </p>
             </div>
         </div>

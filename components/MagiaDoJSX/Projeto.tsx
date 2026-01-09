@@ -6,6 +6,7 @@ interface ProjetoProps {
 }
 
 const Projeto: React.FC<ProjetoProps> = ({ nome, url }) => {
+  
   return (
     <p className="mb-2 text-lg text-gray-700">
       Criei o projeto de <span className="font-semibold text-indigo-600">{nome}</span>, que pode ser acedido através do seguinte link:{' '}

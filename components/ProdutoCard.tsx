@@ -65,9 +65,7 @@ export default function ProdutoCard({ produto, onAddToCart, onRemoveFromCart }: 
                         </button>
                     </Link>
                 </div>
-                <div className="mt-1">
-                        <Favoritos title= 'favorito'/>
-                            </div>
+                
             </div>
         </div>
     );

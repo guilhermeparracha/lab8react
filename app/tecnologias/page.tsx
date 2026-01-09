@@ -7,10 +7,6 @@ import TecnologiaCard from '@/components/MagiaDoJSX/TecnologiaCard';
 
 export default function TecnologiasPage() {
 
-    if (!tecnologias || tecnologias.length === 0) {
-        return <div className="p-10 text-center">Nenhuma tecnologia encontrada no JSON.</div>;
-    }
-
     return (
         <div className="p-4 sm:p-8 bg-gray-50 min-h-screen">
             <h2 className="text-3xl sm:text-4xl font-extrabold mb-10 text-center text-indigo-800">

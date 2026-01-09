@@ -23,7 +23,7 @@ const DescricaoProjetos: React.FC = () => {
           rel="noopener noreferrer" 
           className="text-blue-600 hover:text-blue-800 font-medium underline mt-2 inline-block"
         >
-          {GITHUB_PAGES_HOMEPAGE} (Abrir em nova aba)
+          {GITHUB_PAGES_HOMEPAGE}
         </a>
       </p>
 

@@ -47,13 +47,9 @@ export default function Favoritos({ produtoId }: FavoritoProps) {
         setIsFavorite(prev => !prev); 
     };
 
-   
-
-  
     const icon = isFavorite ? '❤️' : '🤍';
     const buttonClass = isFavorite 
-        ? "bg-red-600 hover:bg-red-700 text-white" 
-        : "bg-gray-100 hover:bg-gray-200 text-gray-800";
+        
     
     return (
         <button

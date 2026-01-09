@@ -1,5 +1,6 @@
 import React from "react";
 import DescricaoProjetos from "@/components/MagiaDoJSX/DescricaoProjetos";
+import Projeto from "@/components/MagiaDoJSX/Projeto";
 
 export default function ProjetosPage() {
   return (
@@ -9,6 +10,8 @@ export default function ProjetosPage() {
       </h1>
       
       <DescricaoProjetos />
+      <Projeto nome={"Loja DEISI"} url={"https://guilhermeparracha.github.io/lab7/index.html"} />
+      <Projeto nome={"Cidade Budapeste"} url={"https://guilhermeparracha.github.io/Lab3/index.html"} />
       
     </div>
   );

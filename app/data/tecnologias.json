@@ -2,85 +2,85 @@
     {
         "title": "HTML",
         "image": "HTML5_logo_and_wordmark.svg",
-        "description": "Linguagem de marcação fundamental...",
+        "description": "Linguagem de marcação fundamental",
         "rating": 5
     },
     {
         "title": "CSS",
         "image": "CSS3_logo_and_wordmark.svg",
-        "description": "Linguagem de estilo usada...",
+        "description": "Linguagem de estilo usada",
         "rating": 4
     },
     {
         "title": "Tailwind CSS",
         "image": "Tailwind_CSS_Logo.svg",
-        "description": "Framework CSS 'utility-first'...",
+        "description": "Framework CSS 'utility-first'",
         "rating": 5
     },
     {
         "title": "JavaScript",
         "image": "Javascript_badge.svg",
-        "description": "Linguagem de programação essencial...",
+        "description": "Linguagem de programação essencial",
         "rating": 4
     },
     {
         "title": "TypeScript",
         "image": "Typescript_logo_2020.svg",
-        "description": "Superset tipado do JavaScript...",
+        "description": "Superset tipado do JavaScript",
         "rating": 5
     },
     {
         "title": "JSON",
         "image": "file-json-svgrepo-com.svg",
-        "description": "Formato de texto simples e leve...",
+        "description": "Formato de texto simples e leve",
         "rating": 4
     },
     {
         "title": "API RESTful",
         "image": "rest-api-icon.svg",
-        "description": "Conjunto de regras de arquitetura...",
+        "description": "Conjunto de regras de arquitetura",
         "rating": 4
     },
     {
         "title": "Swagger",
         "image": "swagger-svgrepo-com.svg",
-        "description": "Ferramenta para projetar, construir...",
+        "description": "Ferramenta para projetar, construir",
         "rating": 3
     },
     {
         "title": "GitHub",
         "image": "Octicons-mark-github.svg",
-        "description": "Plataforma de hospedagem de código-fonte...",
+        "description": "Plataforma de hospedagem de código-fonte",
         "rating": 5
     },
     {
         "title": "Codespaces",
         "image": "GitHub Codespaces.svg",
-        "description": "Ambiente de desenvolvimento instantâneo...",
+        "description": "Ambiente de desenvolvimento instantâneo",
         "rating": 4
     },
     {
         "title": "GitHub Pages",
         "image": "githubPages.svg",
-        "description": "Serviço de hospedagem estática gratuito...",
+        "description": "Serviço de hospedagem estática gratuito",
         "rating": 3
     },
     {
         "title": "React.js",
         "image": "React-icon.svg",
-        "description": "Biblioteca JavaScript declarativa...",
+        "description": "Biblioteca JavaScript declarativa",
         "rating": 5
     },
     {
         "title": "Next.js",
         "image": "nextjs-svgrepo-com.svg", 
-        "description": "Framework React que oferece recursos...",
+        "description": "Framework React que oferece recursos",
         "rating": 5
     },
     {
         "title": "Vercel",
         "image": "vercel-svgrepo-com.svg",
-        "description": "Plataforma de hospedagem e deployment...",
+        "description": "Plataforma de hospedagem e deployment",
         "rating": 4
     }
 ]

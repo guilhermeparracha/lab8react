@@ -76,13 +76,13 @@ export default function PaginaInput() {
       <section className="bg-gray-50 p-6 rounded-lg shadow-sm border">
         <h2 className="text-xl font-bold mb-4 text-gray-800">1. Espelho de Texto</h2>
         <div className="flex flex-col gap-2">
-            <label className="text-sm font-semibold">Digite algo:</label>
+            <label className="text-sm font-semibold text-black">Digite algo:</label>
             <input
             type="text"
             value={textoEspelho}
             onChange={(e) => setTextoEspelho(e.target.value)}
             placeholder="Escreve aqui..."
-            className="p-2 border rounded border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="p-2 border rounded border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
             />
             
             {/* O Texto aparece aqui em baixo */}
@@ -97,7 +97,7 @@ export default function PaginaInput() {
         <h2 className="text-xl font-bold mb-4 text-gray-800">2. Gestor de Tarefas</h2>
         
         {/* Controles de Inserção */}
-        <div className="flex flex-col md:flex-row gap-3 mb-6">
+        <div className="flex flex-col md:flex-row gap-3 mb-6 text-black">
             <input
                 type="text"
                 value={inputTarefa}
