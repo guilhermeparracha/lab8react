@@ -1,5 +1,5 @@
 import React from 'react';
-import 
+import PaisList from '@/components/pais';
 
 export default function PaisPage() {
   return (

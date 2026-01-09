@@ -47,14 +47,7 @@ export default function Favoritos({ produtoId }: FavoritoProps) {
         setIsFavorite(prev => !prev); 
     };
 
-    if (!mounted) return (
-        <button 
-            className="w-full text-center bg-gray-200 text-gray-500 px-3 py-2 rounded-md text-sm font-medium animate-pulse"
-            disabled
-        >
-            Carregando...
-        </button>
-    );
+   
 
   
     const icon = isFavorite ? '❤️' : '🤍';
@@ -65,8 +58,6 @@ export default function Favoritos({ produtoId }: FavoritoProps) {
     return (
         <button
             onClick={handleToggleFavorite} 
-            className={`flex items-center justify-center gap-1 p-2 rounded-full transition-colors shadow-sm ${buttonClass}`}
-            aria-label={isFavorite ? 'Remover dos favoritos' : 'Adicionar aos favoritos'}
         >
             <span className="text-xl leading-none">{icon}</span>
         </button>
